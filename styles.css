@@ -1,0 +1,77 @@
+/* retirar medidas do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* propriedade para poder posicionar a div no centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: sans-serif;
+    color: #ffffff;
+    /* de cima para baixo */
+    /* background-image: linear-gradient(to bottom, red, yellow); */
+
+    /* de baixo para cima */
+    /* background-image: linear-gradient(to top, red, yellow); */
+
+    /* da esquerda para a direita */
+    /* background-image: linear-gradient(to right, red , yellow); */
+
+    /* de cima à esquersa para baixo à direita */
+    background-image: linear-gradient(to bottom right, blue, pink);
+    
+}
+
+#container {
+    width: 400px;
+
+    border: solid 1px black;
+    padding: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+
+label, input, button {
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+button {
+    background-color: purple;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid purple;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+input:focus,
+button:focus {
+    outline-color: purple;
+}
+
+button:focus,
+button:hover {
+    background-color: #ffffff;
+    color: purple;
+}

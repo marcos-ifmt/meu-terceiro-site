@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h3>Formulário de Cadastro</h3>
+
+        <form action="" id="meu-form">
+            <!-- Nome -->
+            <div class="grupo-input">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" autocomplete="off">
+            </div>
+
+            <!-- Sobrenome -->
+            <div class="grupo-input">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" autocomplete="off">
+            </div>
+
+           
+            <!-- Email -->
+            <div class="grupo-input">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+            </div>
+
+
+            <!-- Senha -->
+            <div class="grupo-input">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <button type="submit" onclick="cadastro()">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <button onclick="testando()">Testar</button>
+
+    <script>
+        function testando() {
+            // alert(true && false)
+            // console.log()
+            // let variavel = true
+            // alert(variavel)
+            // let pessoa = { nome: "Ana", idade: 30 };
+            // alert(pessoa.idade)
+            // let frutas = ["Maçã", "Banana", "Uva"];
+            // alert(frutas)
+            // let hoje = new Date()
+            // alert(hoje)
+            console.log("Dev" && "JS");
+        }
+    </script>
+ 
+    <script src="script.js"></script>
+
+</body>
+
+</html>
